@@ -37,3 +37,31 @@ A
 .husky/pre-commit,a/b/ab6c0c74cc7cd7c8c8b24da380d18aa4667658ae
 <
 package.json,7/0/7030d0b2f71b999ff89a343de08c414af32fc93a
+B
+postcss.config.mjs,a/a/aaf1cf9fa3c8ee0e6c766e4a626ddaf9bc1cbb40
+L
+src/settings/mock/pages.json,0/f/0f6786898603ef17ca5af44ee93ba617833fea74
+O
+src/settings/mock/sections.json,3/f/3fa07c5fbcd6b82106107b7392e41f2225b1a329
+M
+src/settings/mock/bboxes.json,9/0/9041c7cac34e29c67aed7d718141b80eec957743
+=
+src/pages/api,0/9/0913d3ae34597f1da8ab450669138b1bffc3d430
+E
+src/pages/api/page.ts,5/c/5c94a824ce3e2fbe39fa795ea08c7b25ab7d94a3
+G
+src/pages/api/bboxes.ts,3/3/33f5619a1deb81caf3ac33c391af96b3d791e163
+H
+src/pages/api/section.ts,4/8/48053f90ae935a5da972b5429a62c11dd415b4c3
+K
+src/app/api/bboxes/route.ts,5/c/5c980c8485b9f757f8e18db5193072d435049c49
+H
+src/app/api/page/page.ts,f/f/ff261e0016f5fac3c11645a7f38de182d37871ae
+L
+src/app/api/section/route.ts,9/6/9651997338202d48174f1b71fe8132c473d260b4
+I
+src/app/api/page/route.ts,a/9/a9671d545831aeabe5ecebab06c54c9a0d754d10
+J
+src/app/api/pages/route.ts,a/c/ac3e7f12cc022ecc6bb7d4fc6f994bd2cc4e8585
+M
+src/app/api/sections/route.ts,2/4/24e2b6169d17e16135d7e7ef38759f9e9ada6d5f
