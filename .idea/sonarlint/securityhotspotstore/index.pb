@@ -65,3 +65,11 @@ J
 src/app/api/pages/route.ts,a/c/ac3e7f12cc022ecc6bb7d4fc6f994bd2cc4e8585
 M
 src/app/api/sections/route.ts,2/4/24e2b6169d17e16135d7e7ef38759f9e9ada6d5f
+M
+src/components/bbox/index.tsx,1/9/19cf60e162563d082a6420072999ba7f812af39a
+W
+'src/components/documentViewer/index.tsx,4/2/4273e6be97603c7fa901d143d2df91c92e478ac4
+M
+src/components/page/index.tsx,d/d/dd05fe4a5486a4078315d7fbc7db67596e409eb2
+P
+ src/components/sidebar/index.tsx,7/a/7a5c6eb23ff430975ed1f675ffae7eb8986503e0

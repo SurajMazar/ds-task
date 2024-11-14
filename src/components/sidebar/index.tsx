@@ -1,16 +1,12 @@
+import React, { PropsWithChildren } from 'react'
 
-import React,{ PropsWithChildren } from 'react'
+const Sidebar: React.FC<PropsWithChildren> = () => {
+    // /**
+    //  * COMPONENT PROPS
+    //  */
+    // const {children} = props
 
-const Sidebar: React.FC<PropsWithChildren<{}>>  = (props) => {
-
-    /**
-     * COMPONENT PROPS
-     */
-    const {children} = props
-
-    return (
-        <></>
-    )
+    return <></>
 }
 
 export default Sidebar

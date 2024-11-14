@@ -1,16 +1,12 @@
+import React, { PropsWithChildren } from 'react'
 
-import React,{ PropsWithChildren } from 'react'
+const DocumentViewer: React.FC<PropsWithChildren> = () => {
+    // /**
+    //  * COMPONENT PROPS
+    //  */
+    // const {children} = props
 
-const DocumentViewer: React.FC<PropsWithChildren<{}>>  = (props) => {
-
-    /**
-     * COMPONENT PROPS
-     */
-    const {children} = props
-
-    return (
-        <></>
-    )
+    return <></>
 }
 
 export default DocumentViewer

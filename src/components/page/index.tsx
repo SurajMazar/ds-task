@@ -1,16 +1,12 @@
+import React, { PropsWithChildren } from 'react'
 
-import React,{ PropsWithChildren } from 'react'
+const Page: React.FC<PropsWithChildren> = () => {
+    // /**
+    //  * COMPONENT PROPS
+    //  */
+    // const {children} = props
 
-const Page: React.FC<PropsWithChildren<{}>>  = (props) => {
-
-    /**
-     * COMPONENT PROPS
-     */
-    const {children} = props
-
-    return (
-        <></>
-    )
+    return <></>
 }
 
 export default Page

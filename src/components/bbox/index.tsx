@@ -1,16 +1,7 @@
+import React, { PropsWithChildren } from 'react'
 
-import React,{ PropsWithChildren } from 'react'
-
-const Bbox: React.FC<PropsWithChildren<{}>>  = (props) => {
-
-    /**
-     * COMPONENT PROPS
-     */
-    const {children} = props
-
-    return (
-        <></>
-    )
+const Bbox: React.FC<PropsWithChildren> = () => {
+    return <></>
 }
 
 export default Bbox
