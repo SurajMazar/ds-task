@@ -1,9 +1,9 @@
 import type { Metadata } from 'next'
 import localFont from 'next/font/local'
-import './globals.scss'
 import AppLayout from '@/containers/layouts/appLayout'
 import React from 'react'
 import ReduxContainer from '@/containers/hoc/Redux'
+import './globals.scss'
 
 const geistSans = localFont({
     src: './fonts/GeistVF.woff',

@@ -3,6 +3,29 @@
 @tailwind utilities;
 
 :root {
-    --background: #ffffff;
-    --foreground: #171717;
+    --doc-background: #526069;
+    --sidebar-dark-bg: #172028;
+    --field-dark-bg: #273039;
+    --light-bg: #ffffff;
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+}
+.white-spin {
+    .ant-spin-dot-item {
+        background: white !important;
+    }
+}
+
+.custom-checkbox {
+    .ant-checkbox-checked .ant-checkbox-inner {
+        background-color: white !important;
+        border-color: black !important;
+        border-radius: 0 !important;
+    }
+    .ant-checkbox-inner::after {
+        border-color: black !important;
+    }
 }
