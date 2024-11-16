@@ -1,5 +1,5 @@
 'use client'
-import React, {createContext, PropsWithChildren, useMemo, useState} from 'react'
+import React, {createContext, PropsWithChildren, useEffect, useMemo, useState} from 'react'
 import {DocumentViewerContextInterface} from '@/@types/container/context'
 import {DocumentModelInterface} from '@/@types/model/document.model'
 import {PageModelInterface} from '@/@types/model/page.model'
@@ -7,6 +7,7 @@ import {SectionChildInterface, SectionModelInterface} from '@/@types/model/secti
 import {BboxesModelInterface} from '@/@types/model/bbox.model'
 import {useQuery} from 'react-query'
 import DataService from '@/core/service/data.service'
+import useArrayObj from "@/core/hooks/useArrayObj";
 
 export const DocumentViewerContext =
     createContext<DocumentViewerContextInterface>(
@@ -27,6 +28,16 @@ export const DocumentViewerContextWrapper: React.FC<PropsWithChildren> = ({
     const [sections, setSection] = useState<Array<SectionModelInterface>>([])
     const [currentPage, setCurrentPage] = useState<number | null>(null)
     const [zoom, setZoom] = useState(75)
+    const [showBbox, setShowBbox] = useState(false)
+    const [selectedSections, setSelectedSections] = useState<Array<string>>([])
+    const [hoverActiveSection, setHoverActiveSection] = useState<string>()
+
+
+    /**
+     * HOOKS
+     */
+    const {data: psc, setData, deleteItem} = useArrayObj<SectionChildInterface>([])
+
 
     /**
      * FETCHING THE NECESSARY DATA
@@ -79,14 +90,16 @@ export const DocumentViewerContextWrapper: React.FC<PropsWithChildren> = ({
     /**
      * CURRENT PAGE SECTION
      */
-    const pageSectionChildren = useMemo(() => {
-        return sections?.reduce((acc, item) => {
+    useEffect(() => {
+        const formatted = sections?.reduce((acc, item) => {
             return [
                 ...acc,
                 ...(item?.children?.filter(child => child.content?.page === currentPage))
             ]
         }, [] as Array<SectionChildInterface>)
-    }, [sections,currentPage])
+        setData(formatted)
+    }, [sections, currentPage, setData])
+
 
     return (
         <DocumentViewerContext.Provider
@@ -102,7 +115,14 @@ export const DocumentViewerContextWrapper: React.FC<PropsWithChildren> = ({
                 zoom,
                 setZoom,
                 zoomFactor,
-                pageSectionChildren,
+                pageSectionChildren: psc,
+                deletePageSectionChildren: deleteItem,
+                showBbox,
+                setShowBbox,
+                selectedSections,
+                setSelectedSections,
+                hoverActiveSection,
+                setHoverActiveSection,
             }}
         >
             {children}

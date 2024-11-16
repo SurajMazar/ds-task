@@ -78,7 +78,7 @@
                             "review_required": false,
                             "validation_source": "ai",
                             "type": "title",
-                            "value": "WELLS FARGO BUSINESS CHOICE CHECKING"
+                            "value": "Wells Fargo Business Choice Checking"
                         },
                         "doc_id": "a2cbec1124234a6d846f908ba9531a2e",
                         "format": "%s",
@@ -168,7 +168,7 @@
                             "is_valid_format": false,
                             "orig_value": "July 1, 2018,",
                             "page": 1,
-                            "position": [515, 171, 653, 194],
+                            "position": [515, 171, 650, 195],
                             "review_required": true,
                             "validation_source": "ai",
                             "value": "July 1, 2018,"
@@ -199,10 +199,10 @@
                             "is_valid_format": true,
                             "orig_value": "07/31/2018",
                             "page": 1,
-                            "position": [678, 172, 827, 195],
+                            "position": [655, 171, 827, 195],
                             "review_required": false,
                             "validation_source": "ai",
-                            "value": "07/31/2018"
+                            "value": "July 31, 2018"
                         },
                         "doc_id": "a2cbec1124234a6d846f908ba9531a2e",
                         "format": "dd/mm/yyyy",
@@ -230,7 +230,7 @@
                             "is_valid_format": true,
                             "orig_value": "2 POST ALLEY, SEATTLE, WA 98101",
                             "page": 1,
-                            "position": [110, 516, 349, 572],
+                            "position": [110, 516, 310, 572],
                             "review_required": false,
                             "validation_source": "ai",
                             "value": "2 POST ALLEY, SEATTLE, WA 98101"
@@ -259,12 +259,13 @@
                         "content": {
                             "confidence": 0.73,
                             "is_valid_format": true,
-                            "orig_value": "Checking",
+                            "orig_value": "Account Options",
                             "page": 1,
-                            "position": [829, 108, 1048, 153],
+                            "position": [1046, 890, 1276, 919],
+                            "type": "sub_title",
                             "review_required": false,
                             "validation_source": "ai",
-                            "value": "Checking"
+                            "value": "Account Options"
                         },
                         "doc_id": "a2cbec1124234a6d846f908ba9531a2e",
                         "format": "%s",
@@ -292,10 +293,10 @@
                             "is_valid_format": true,
                             "orig_value": "Passed",
                             "page": 1,
-                            "position": [],
+                            "position": [1121, 699, 1410, 721],
                             "review_required": false,
                             "validation_source": "ai",
-                            "value": "Passed"
+                            "value": "Wells Fargo Bank, N.A. (338)"
                         },
                         "doc_id": "a2cbec1124234a6d846f908ba9531a2e",
                         "format": "%s",
@@ -304,7 +305,7 @@
                         "id_auto_extract": 1901010,
                         "id_auto_extract_label": "Tally Check",
                         "ignore": false,
-                        "label": "Tally Check",
+                        "label": "Bank Name",
                         "low_confidence": false,
                         "no_items_row": 1,
                         "order": 10,
@@ -321,12 +322,12 @@
                         "content": {
                             "confidence": 1,
                             "is_valid_format": true,
-                            "orig_value": "auto",
+                            "orig_value": "SERRA STRUCTURAL STEEL BUILDER INC",
                             "page": 1,
-                            "position": [],
+                            "position": [1054, 1356, 1475, 1375],
                             "review_required": false,
                             "validation_source": "ai",
-                            "value": "auto"
+                            "value": "SERRA STRUCTURAL STEEL BUILDER INC"
                         },
                         "doc_id": "a2cbec1124234a6d846f908ba9531a2e",
                         "drop_down_type": "list",
@@ -336,7 +337,7 @@
                         "id_auto_extract": 1901011,
                         "id_auto_extract_label": "Document Type",
                         "ignore": false,
-                        "label": "Document Type",
+                        "label": "Client Name",
                         "low_confidence": false,
                         "no_items_row": 1,
                         "order": 11,
@@ -347,168 +348,6 @@
                         "time_spent": 0,
                         "type": "drop_down",
                         "user_id": "6579ad54f6fe1b6370ef0781"
-                    },
-                    {
-                        "acc": 1,
-                        "children": [
-                            [
-                                [
-                                    {
-                                        "acc": 1,
-                                        "content": {
-                                            "is_valid_format": true,
-                                            "orig_value": "",
-                                            "position": [],
-                                            "value": ""
-                                        },
-                                        "doc_id": "a2cbec1124234a6d846f908ba9531a2e",
-                                        "format": "%s",
-                                        "format_message": "",
-                                        "id": 1901012001,
-                                        "id_auto_extract": 1901012001,
-                                        "id_auto_extract_label": "Serial Number",
-                                        "ignore": false,
-                                        "label": "Serial Number",
-                                        "low_confidence": false,
-                                        "no_items_row": 5,
-                                        "order": 1,
-                                        "p_title": "Basic Information",
-                                        "p_type": "basic_info",
-                                        "parent_id": 1901,
-                                        "sub_p_id": 1901012,
-                                        "sub_p_title": "Multiple Accounts",
-                                        "sub_p_type": "line_item",
-                                        "time_spent": 0,
-                                        "type": "string"
-                                    },
-                                    {
-                                        "acc": 1,
-                                        "content": {
-                                            "is_valid_format": true,
-                                            "orig_value": "",
-                                            "position": [],
-                                            "value": ""
-                                        },
-                                        "doc_id": "a2cbec1124234a6d846f908ba9531a2e",
-                                        "format": "%s",
-                                        "format_message": "",
-                                        "id": 1901012002,
-                                        "id_auto_extract": 1901012002,
-                                        "id_auto_extract_label": "Account Name",
-                                        "ignore": false,
-                                        "label": "Account Name",
-                                        "low_confidence": false,
-                                        "no_items_row": 5,
-                                        "order": 2,
-                                        "p_title": "Basic Information",
-                                        "p_type": "basic_info",
-                                        "parent_id": 1901,
-                                        "sub_p_id": 1901012,
-                                        "sub_p_title": "Multiple Accounts",
-                                        "sub_p_type": "line_item",
-                                        "time_spent": 0,
-                                        "type": "string"
-                                    },
-                                    {
-                                        "acc": 1,
-                                        "content": {
-                                            "is_valid_format": true,
-                                            "orig_value": "",
-                                            "position": [],
-                                            "value": ""
-                                        },
-                                        "doc_id": "a2cbec1124234a6d846f908ba9531a2e",
-                                        "format": "%d",
-                                        "format_message": "",
-                                        "id": 1901012003,
-                                        "id_auto_extract": 1901012003,
-                                        "id_auto_extract_label": "Opening Balance",
-                                        "ignore": false,
-                                        "label": "Opening Balance",
-                                        "low_confidence": false,
-                                        "no_items_row": 5,
-                                        "order": 3,
-                                        "p_title": "Basic Information",
-                                        "p_type": "basic_info",
-                                        "parent_id": 1901,
-                                        "sub_p_id": 1901012,
-                                        "sub_p_title": "Multiple Accounts",
-                                        "sub_p_type": "line_item",
-                                        "time_spent": 0,
-                                        "type": "number"
-                                    },
-                                    {
-                                        "acc": 1,
-                                        "content": {
-                                            "is_valid_format": true,
-                                            "orig_value": "",
-                                            "position": [],
-                                            "value": ""
-                                        },
-                                        "doc_id": "a2cbec1124234a6d846f908ba9531a2e",
-                                        "format": "%d",
-                                        "format_message": "",
-                                        "id": 1901012004,
-                                        "id_auto_extract": 1901012004,
-                                        "id_auto_extract_label": "Closing Balance",
-                                        "ignore": false,
-                                        "label": "Closing Balance",
-                                        "low_confidence": false,
-                                        "no_items_row": 5,
-                                        "order": 4,
-                                        "p_title": "Basic Information",
-                                        "p_type": "basic_info",
-                                        "parent_id": 1901,
-                                        "sub_p_id": 1901012,
-                                        "sub_p_title": "Multiple Accounts",
-                                        "sub_p_type": "line_item",
-                                        "time_spent": 0,
-                                        "type": "number"
-                                    },
-                                    {
-                                        "acc": 1,
-                                        "content": {
-                                            "is_valid_format": true,
-                                            "orig_value": "",
-                                            "position": [],
-                                            "value": ""
-                                        },
-                                        "doc_id": "a2cbec1124234a6d846f908ba9531a2e",
-                                        "format": "%s",
-                                        "format_message": "",
-                                        "id": 1901012005,
-                                        "id_auto_extract": 1901012005,
-                                        "id_auto_extract_label": "Tables",
-                                        "ignore": false,
-                                        "label": "Tables",
-                                        "low_confidence": false,
-                                        "no_items_row": 5,
-                                        "order": 5,
-                                        "p_title": "Basic Information",
-                                        "p_type": "basic_info",
-                                        "parent_id": 1901,
-                                        "sub_p_id": 1901012,
-                                        "sub_p_title": "Multiple Accounts",
-                                        "sub_p_type": "line_item",
-                                        "time_spent": 0,
-                                        "type": "string"
-                                    }
-                                ]
-                            ]
-                        ],
-                        "doc_id": "a2cbec1124234a6d846f908ba9531a2e",
-                        "format": "%t",
-                        "format_message": "",
-                        "id": 1901012,
-                        "label": "Multiple Accounts",
-                        "low_confidence": false,
-                        "no_items_row": 5,
-                        "order": 12,
-                        "p_title": "Basic Information",
-                        "p_type": "basic_info",
-                        "parent_id": 1901,
-                        "row_count": 0,
-                        "type": "line_item"
                     }
                 ],
                 "id": 1901,

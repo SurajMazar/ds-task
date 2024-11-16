@@ -11,17 +11,21 @@ const ZoomChanger: React.FC = () => {
     const {zoom, setZoom} = UseDocumentViewerContext()
 
     return (
-        <div className={'z-20 sticky bottom-[8px] ml-auto w-[100px] bg-white rounded-md'}>
+        <div className={'z-20 sticky bottom-[15px] ml-auto w-[100px] dark:bg-sidebar-dark-bg bg-white dark:text-white text-black rounded-md'}>
             <div className="flex justify-center items-center">
-                <Button icon={<MinusOutlined/>} disabled={zoom <= 75} onClick={() => {
+                <Button icon={<MinusOutlined/>}
+                        className={'dark:!bg-sidebar-dark-bg !bg-white dark:!text-white !text-black'}
+                        disabled={zoom <= 75} onClick={() => {
                     if (zoom > 75) {
                         setZoom(zoom - 1)
                     }
                 }}/>
-                <div className={'p-2'}>
+                <div className={'p-2 dark:bg-sidebar-dark-bg bg-white dark:text-white text-black'}>
                     {zoom}%
                 </div>
-                <Button icon={<PlusOutlined/>} disabled={zoom >= 100} onClick={() => {
+                <Button
+                    className={'dark:!bg-sidebar-dark-bg !bg-white dark:!text-white !text-black'}
+                    icon={<PlusOutlined/>} disabled={zoom >= 100} onClick={() => {
                     if (zoom < 100) {
                         setZoom(zoom + 1)
                     }

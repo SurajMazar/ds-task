@@ -11,7 +11,7 @@ const DocumentViewer: React.FC = () => {
     const {pages, loadingDocuments} = useDocumentViewerContext()
 
 
-    return <div className={'bg-doc-bg p-4  min-h-screen relative w-fit min-w-full'}>
+    return <div className={'bg-doc-bg p-4  min-h-screen relative w-fit min-w-full select-none'}>
         {pages?.length ? pages.map((page, index) => (
             <Page page={page} pageNo={index + 1} key={page?.id}/>
         )) : !loadingDocuments ? <h1 className={'text-white w-full h-full text-center'}>No pages.</h1> :

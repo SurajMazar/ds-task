@@ -2,7 +2,7 @@ import { AppConfigStoreInterface } from '@/@types/store'
 import { createSlice } from '@reduxjs/toolkit'
 
 const initialState: AppConfigStoreInterface = {
-    darkMode: false
+    darkMode: true
 }
 
 /**

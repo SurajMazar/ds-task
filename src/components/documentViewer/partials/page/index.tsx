@@ -14,7 +14,7 @@ const Page: React.FC<{ page: PageModelInterface; pageNo: number }> = (
     /**
      * HOOKS
      */
-    const {currentPage, zoomFactor, bboxes} = useDocumentViewerContext()
+    const {currentPage, zoomFactor, bboxes, showBbox} = useDocumentViewerContext()
 
 
     /**
@@ -60,7 +60,7 @@ const Page: React.FC<{ page: PageModelInterface; pageNo: number }> = (
                 <div style={pageStyle}>
                     {
                         (bboxes?.bboxes ?? []).map((box, index) => (
-                            <Bbox box={box} key={index} highlight/>
+                            <Bbox box={box} key={index} highlight={showBbox}/>
                         ))
                     }
                 </div>

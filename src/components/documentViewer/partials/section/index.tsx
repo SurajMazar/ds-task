@@ -1,14 +1,21 @@
 import React, {useMemo} from 'react'
 import {SectionChildInterface} from "@/@types/model/section.model";
+import {getColorViaIndex} from "@/utils/color.utils";
+import useDocumentViewerContext from "@/core/hooks/useDocumentViewerContext";
 
-const SectionRenderer: React.FC<{ section: SectionChildInterface }> = (
+const SectionRenderer: React.FC<{ section: SectionChildInterface, index: number }> = (
     props
 ) => {
 
     /**
      * PROPS
      */
-    const {section} = props
+    const {section, index} = props
+
+    /**
+     * HOOKS
+     */
+    const {selectedSections, hoverActiveSection} = useDocumentViewerContext()
 
 
     /**
@@ -21,14 +28,33 @@ const SectionRenderer: React.FC<{ section: SectionChildInterface }> = (
                     fontSize: `40px`,
                     fontWeight: 'bold'
                 }
+            case 'sub_title':
+                return {
+                    fontSize: `25px`,
+                    fontWeight: 'bold'
+                }
             default:
                 return {
-                    fontSize: `20px`,
+                    fontSize: `22px`,
                 }
         }
     }, [section])
 
-    return <div style={sectionClass}>
+    /**
+     * COLOR CODE FOR THE
+     */
+    const colorCode = useMemo(() => {
+        return getColorViaIndex(index)
+    }, [index])
+
+
+    return <div style={{
+        transition:'all 0.5s ease-in-out',
+        ...sectionClass,
+        ...(selectedSections.includes(section.id) || hoverActiveSection === section.id ? {
+            backgroundColor: `rgba(${colorCode?.code},0.7)`
+        } : {})
+    }}>
         {section?.content?.value ?? ''}
     </div>
 }

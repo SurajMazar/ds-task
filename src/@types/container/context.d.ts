@@ -16,5 +16,12 @@ export interface DocumentViewerContextInterface {
     zoom: number
     zoomFactor:number
     pageSectionChildren:Array<SectionChildInterface>
+    deletePageSectionChildren: (deletedItem: SectionChildInterface, key: keyof SectionChildInterface) => void
     setZoom: React.Dispatch<React.SetStateAction<number>>
+    showBbox:boolean
+    setShowBbox:React.Dispatch<React.SetStateAction<boolean>>
+    selectedSections:Array<number>
+    setSelectedSections:React.Dispatch<React.SetStateAction<Array<number>>>
+    hoverActiveSection?:number
+    setHoverActiveSection:React.Dispatch<React.SetStateAction<number|undefined>>
 }

@@ -8,11 +8,11 @@ export default function Home() {
     return (
         <>
             <DocumentViewerContextWrapper>
-                <Row gutter={10}>
+                <Row>
                     <Col xs={18} className={'h-screen overflow-auto'}>
                         <DocumentViewer />
                     </Col>
-                    <Col xs={6}>
+                    <Col xs={6} className={'dark:bg-sidebar-dark-bg bg-white'}>
                         <Sidebar />
                     </Col>
                 </Row>

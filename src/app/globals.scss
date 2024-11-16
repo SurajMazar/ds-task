@@ -18,3 +18,14 @@ body {
         background: white !important;
     }
 }
+
+.custom-checkbox {
+    .ant-checkbox-checked .ant-checkbox-inner {
+        background-color: white !important;
+        border-color: black !important;
+        border-radius: 0 !important;
+    }
+    .ant-checkbox-inner::after {
+        border-color: black !important;
+    }
+}

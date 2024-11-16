@@ -2,6 +2,8 @@ import React, {useMemo} from 'react'
 import useDocumentViewerContext from "@/core/hooks/useDocumentViewerContext";
 import _ from 'lodash'
 import SectionRenderer from "@/components/documentViewer/partials/section";
+import {DefaultSectionsConstant} from "@/settings/constant/defaultSections.constant";
+import DSectionRenderer from "@/components/documentViewer/partials/defaultSection";
 
 const Bbox: React.FC<{
     highlight?: boolean
@@ -35,6 +37,10 @@ const Bbox: React.FC<{
             top: `${y1}px`,
             width: width,
             height: height,
+            display: 'flex',
+            flexWrap: 'nowrap',
+            whiteSpace: 'nowrap',
+            alignItems: 'center',
             ...(highlight ? {
                 border: '2px solid red',
                 backgroundColor: 'rgba(255, 0, 0, 0.3)',
@@ -47,11 +53,23 @@ const Bbox: React.FC<{
      * SECTION CHILDREN
      */
     const sectionChildren = useMemo(() => {
-        return pageSectionChildren.find(section => _.isEqual(box.rectangle, section?.content?.position))
+        const section = pageSectionChildren.find(section => _.isEqual(box.rectangle, section?.content?.position))
+        return {
+            section,
+            ...(section ? {index: pageSectionChildren.indexOf(section)} : {})
+        }
     }, [pageSectionChildren, box.rectangle])
 
-    return <div style={style}>
-        {sectionChildren ? <SectionRenderer section={sectionChildren}/> : ''}
+    /**
+     * DEFAULT SECTION
+     */
+    const dsection = useMemo(() => {
+        return DefaultSectionsConstant.find(section => _.isEqual(box.rectangle, section?.position))
+    }, [box.rectangle])
+
+    return <div style={style} onClick={() => console.log(box)}>
+        {sectionChildren?.section ? <SectionRenderer section={sectionChildren?.section} index={sectionChildren?.index ?? 0}/> : dsection ?
+            <DSectionRenderer section={dsection}/> : ''}
     </div>;
 }
 
