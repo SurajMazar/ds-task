@@ -129,3 +129,5 @@ b
 2src/components/sidebar/partials/sections/index.tsx,6/f/6ff892b934ad6b5c9ef63b400aeacc775ac32569
 `
 0src/components/sidebar/partials/footer/index.tsx,c/7/c7d13592c585cc60c12cfa84119f01dd622ba335
+>
+.eslintrc.json,7/1/71c20a341bfe32aa5cd5b4384e94f942bab6a7d3

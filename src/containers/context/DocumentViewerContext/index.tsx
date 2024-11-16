@@ -29,8 +29,8 @@ export const DocumentViewerContextWrapper: React.FC<PropsWithChildren> = ({
     const [currentPage, setCurrentPage] = useState<number | null>(null)
     const [zoom, setZoom] = useState(75)
     const [showBbox, setShowBbox] = useState(false)
-    const [selectedSections, setSelectedSections] = useState<Array<string>>([])
-    const [hoverActiveSection, setHoverActiveSection] = useState<string>()
+    const [selectedSections, setSelectedSections] = useState<Array<number>>([])
+    const [hoverActiveSection, setHoverActiveSection] = useState<number>()
 
 
     /**
