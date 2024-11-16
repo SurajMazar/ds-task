@@ -74,10 +74,11 @@
                             "is_valid_format": true,
                             "orig_value": "WELLS FARGO",
                             "page": 1,
-                            "position": [1409, 133, 1538, 187],
+                            "position": [113, 108, 1048, 153],
                             "review_required": false,
                             "validation_source": "ai",
-                            "value": "WELLS FARGO"
+                            "type": "title",
+                            "value": "WELLS FARGO BUSINESS CHOICE CHECKING"
                         },
                         "doc_id": "a2cbec1124234a6d846f908ba9531a2e",
                         "format": "%s",

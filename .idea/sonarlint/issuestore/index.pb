@@ -73,3 +73,43 @@ M
 src/components/page/index.tsx,d/d/dd05fe4a5486a4078315d7fbc7db67596e409eb2
 P
  src/components/sidebar/index.tsx,7/a/7a5c6eb23ff430975ed1f675ffae7eb8986503e0
+f
+6src/containers/context/DocumentViewerContext/index.tsx,6/b/6b333c88a0326ad3d8af53f382a2289071594ff8
+`
+0src/containers/hoc/ReactQueryContainer/index.tsx,8/6/867730752eac1216ddf18b849f7d47861d67f31d
+Y
+)src/settings/config/react-query.config.ts,7/1/71b87ef6fcc523c0a9ffbb615505fc4521344ac1
+>
+next.config.ts,a/0/a0c2fdd26b1bc645a7bf22a0e7259f42a915d5fa
+Q
+!src/@types/container/context.d.ts,3/c/3cacfec01ff8db6502916b26578a488c5b9033ca
+P
+ src/@types/model/page.model.d.ts,8/5/8503a270c270d27883f55c99c36e0535d66faf7a
+P
+ src/@types/model/bbox.model.d.ts,3/b/3bd2b9a5f2b59b9a6129e359b17b286380546d1c
+S
+#src/@types/model/section.model.d.ts,c/0/c04c9f6e6cd18af05c483f208a6acf399be74d19
+T
+$src/@types/model/document.model.d.ts,6/1/61cc1dad63e09e356d6252aac71cb670edaedbb2
+M
+src/core/hooks/useArrayObj.ts,2/5/25c59db1f367fd922f50c7977c2a7a762a323ae9
+P
+ src/core/service/data.service.ts,0/1/0191950e48da1a95851f727b69f005cbad0b3618
+X
+(src/settings/constant/colors.constant.ts,a/a/aa1fe77509b047e80bfbfbb77b84a41f5b4cd30e
+H
+src/utils/color.utils.ts,f/9/f94734e73bc305fb18e3e32b4f8fd6b275a6e676
+Z
+*src/core/hooks/useDocumentViewerContext.ts,a/3/a3f27b0d0c04b4558fd96a1d252151ce8b0774a1
+e
+5src/components/documentViewer/partials/page/index.tsx,9/7/97fc00edb2e95982e9fa646daf948fe939049144
+e
+5src/components/documentViewer/partials/bbox/index.tsx,2/0/2015a029e6bbf94eb49a6c571520444b7068f492
+N
+src/app/api/documents/route.ts,9/2/925ef02b3b68457264e3f2634d8d6a0a0e3972ab
+T
+$src/components/zoomChanger/index.tsx,c/2/c2d7582fc7ab2679f8fcf1ee5aa6a30d43ee9f25
+Y
+)src/containers/hoc/AntdRegistry/index.tsx,0/1/017a930035c2541cba0c3c09a20d912088adbd09
+h
+8src/components/documentViewer/partials/section/index.tsx,d/0/d01df264c345934070c626af4c66c76972cb5934

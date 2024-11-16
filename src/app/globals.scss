@@ -3,6 +3,18 @@
 @tailwind utilities;
 
 :root {
-    --background: #ffffff;
-    --foreground: #171717;
+    --doc-background: #526069;
+    --sidebar-dark-bg: #172028;
+    --field-dark-bg: #273039;
+    --light-bg: #ffffff;
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+}
+.white-spin {
+    .ant-spin-dot-item {
+        background: white !important;
+    }
 }
