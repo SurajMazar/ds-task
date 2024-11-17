@@ -95,7 +95,8 @@ src
 - Run Google Lighthouse locally or with a deployed version and attach a screenshot of the insights in the Readme.
 
 ## Lighthouse Insights
-![image](https://github.com/user-attachments/assets/1b459892-b5a9-4d4a-a556-343f1273bc5b)
+![image](https://github.com/user-attachments/assets/aafa75fc-1dc9-47a6-a654-d66fd30beb3f)
+
 
 
 ## Deployment
