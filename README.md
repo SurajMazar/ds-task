@@ -94,7 +94,9 @@ src
 - Using codebase with typescript support is appreciable.
 - Run Google Lighthouse locally or with a deployed version and attach a screenshot of the insights in the Readme.
 
-### Lighthouse Insights
+## Lighthouse Insights
+![image](https://github.com/user-attachments/assets/1b459892-b5a9-4d4a-a556-343f1273bc5b)
+
 
 ## Deployment
 The application is currently hosted at.
