@@ -22,7 +22,8 @@ const SectionCard: React.FC<{
         selectedSections,
         deletePageSectionChildren,
         setSelectedSections,
-        setHoverActiveSection
+        setHoverActiveSection,
+        hoverActiveSection
     } = useDocumentViewerContext()
 
     /**
@@ -45,9 +46,11 @@ const SectionCard: React.FC<{
 
     return (
         <>
-            <div className="my-4 p-4 shadow-lg rounded-md" onMouseOver={() => {
-                setHoverActiveSection(section?.id)
-            }} onMouseLeave={() => setHoverActiveSection(undefined)}>
+            <div
+                className={`my-4 p-4 shadow-lg rounded-md transition duration-300 ease-in-out ${hoverActiveSection === section?.id ? 'dark:bg-gray-600 bg-gray-200' : ''}`}
+                onMouseOver={() => {
+                    setHoverActiveSection(section?.id)
+                }} onMouseLeave={() => setHoverActiveSection(undefined)}>
                 <div className="flex items-start gap-4">
                     <div className={'rounded-md dark:text-white p-2 text-black border-l-4 text-center'}
                          style={{
@@ -59,13 +62,15 @@ const SectionCard: React.FC<{
                     </div>
 
                     <div>
-                        <h1 className="text-lg dark:text-white text-gray-600 mb-2">{section?.label}</h1>
+                        <label htmlFor={`checkbox-${section?.id}`}>
+                            <h1 className="text-lg dark:text-white text-gray-600 mb-2 cursor-pointer">{section?.label}</h1>
+                        </label>
                         <p className={'dark:text-white text-gray-600'}>{section?.content?.value}</p>
                     </div>
 
                     <div className={'ml-auto'}>
                         <div className="flex gap-1">
-                            <Checkbox checked={selected} onChange={(event) => {
+                            <Checkbox id={`checkbox-${section?.id}`} checked={selected} onChange={(event) => {
                                 if (event?.target?.checked) {
                                     setSelectedSections((prev) => {
                                         return [

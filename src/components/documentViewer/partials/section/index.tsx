@@ -15,7 +15,7 @@ const SectionRenderer: React.FC<{ section: SectionChildInterface, index: number 
     /**
      * HOOKS
      */
-    const {selectedSections, hoverActiveSection} = useDocumentViewerContext()
+    const {selectedSections, setHoverActiveSection, hoverActiveSection} = useDocumentViewerContext()
 
 
     /**
@@ -48,13 +48,17 @@ const SectionRenderer: React.FC<{ section: SectionChildInterface, index: number 
     }, [index])
 
 
-    return <div style={{
-        transition:'all 0.5s ease-in-out',
-        ...sectionClass,
-        ...(selectedSections.includes(section.id) || hoverActiveSection === section.id ? {
-            backgroundColor: `rgba(${colorCode?.code},0.7)`
-        } : {})
-    }}>
+    return <div
+        onMouseOver={() => {
+            setHoverActiveSection(section?.id)
+        }} onMouseLeave={() => setHoverActiveSection(undefined)}
+        style={{
+            transition: 'all 0.5s ease-in-out',
+            ...sectionClass,
+            ...(selectedSections.includes(section.id) || hoverActiveSection === section.id ? {
+                backgroundColor: `rgba(${colorCode?.code},0.7)`
+            } : {})
+        }}>
         {section?.content?.value ?? ''}
     </div>
 }

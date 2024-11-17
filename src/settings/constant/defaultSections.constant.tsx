@@ -12,7 +12,7 @@ export const DefaultSectionsConstant: Array<DefaultSectionsInterface> = [
         position: [113, 170, 296, 193]
     },
     {
-        value: <img src={'./logo.png'}/>,
+        value: <img src={'./logo.png'} alt={'logo'}/>,
         position: [1416, 164, 1534, 187]
     },
     {
