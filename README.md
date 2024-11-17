@@ -90,10 +90,10 @@ src
 ```
 
 ## Function requirements included
-✅ Optionally include a toggle at the header for dark and light modes (to assess theme experience).
-✅ Using codebase with typescript support is appreciable.
-✅ Run Google Lighthouse locally or with a deployed version and attach a screenshot of the insights in the Readme.
-❌ Keyboard shortcut.
+- ✅ Optionally include a toggle at the header for dark and light modes (to assess theme experience).
+- ✅ Using codebase with typescript support is appreciable.
+- ✅ Run Google Lighthouse locally or with a deployed version and attach a screenshot of the insights in the Readme.
+- ❌ Keyboard shortcut.
 
 ## Lighthouse Insights
 ![image](https://github.com/user-attachments/assets/92de4247-d495-4d14-8175-92442fae0d40)
