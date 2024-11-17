@@ -131,3 +131,5 @@ b
 0src/components/sidebar/partials/footer/index.tsx,c/7/c7d13592c585cc60c12cfa84119f01dd622ba335
 >
 .eslintrc.json,7/1/71c20a341bfe32aa5cd5b4384e94f942bab6a7d3
+?
+public/next.svg,0/f/0f0d3de08f3cde5481ae7a36082cdc12c93b0f89

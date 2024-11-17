@@ -1,36 +1,101 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Review Screen page
 
-## Getting Started
+This is a user interface for reviewing and confirming extracted data for which the document the user has uploaded. The
+required images and data dumps are attached in
+this [gDrive](https://drive.google.com/file/d/1vVayeGVpiTakSljgAH2xKcCS_s3L32Io/view?usp=sharing). The data dumps have
+more api dumps but focus only on the mentioned data below.
+For completing this assessment you can focus on the page itself and ignore the header functionalities. The header can
+simply be with title alone
 
-First, run the development server:
+### Further details of the task can be found [here](https://docs.google.com/document/d/1Pn6U214pQohOOCt8bJsDQRLAnGtAi-PpbZa7YJnXEZU)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## TECHNOLOGY STACK
+
+| Title                 | Details                                                                                                                                     |
+|-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------|
+| Programming Languages | Typescript, HTML , Scss                                                                                                                     |
+| Runtime Environment   | [Node 20](https://nodejs.org/en/blog/release/v20.9.0)                                                                                       |
+| Framework             | [Next JS](https://nextjs.org),[Tailwindcss](https://tailwindcss.com/docs/installation), [Antd -  UI library for react](https://ant.design/) |
+| Other Packages Used   | Axios, React query, Lodash, Prettier , Eslint, Lint Staged, React redux, Redux toolkit                                                      |
+| Version Control       | Github, [Husky](https://typicode.github.io/husky/get-started.html) (For pre-commit hooks)                                                   |
+
+# Project setup
+
+**Step 1:** Clone the repository.
+```
+git clone ${repo url}
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**Step 2:** Install dependencies
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+yarn install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+**Step 3:** Start the project
 
-## Learn More
+```
+yarn dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+**Step 4:** The project is up and running on [link](http://localhost:3000)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Project Structure
+```plaintext
+src
+├── @types               # TypeScript type definitions
+│   ├── container        # Type definitions for containers
+│   ├── model            # Type definitions for models
+│   └── store            # Type definitions for store
+├── app                  # Application entry point and global styles
+│   ├── api              # API configurations and services
+│   ├── fonts            # Font files
+│   ├── favicon.ico      # Favicon for the app
+│   ├── globals.scss     # Global SCSS styles
+│   ├── layout.tsx       # Layout component
+│   └── page.tsx         # Main page component
+├── components           # Reusable UI components
+│   ├── documentViewer   # Document viewer component
+│   ├── sidebar          # Sidebar component
+│   └── zoomChanger      # Zoom changer component
+├── containers           # High-order components, contexts, and layouts
+│   ├── context          # Context providers
+│   │   └── DocumentViewerContext
+│   ├── hoc              # Higher-order components
+│   │   ├── AntdRegistry
+│   │   ├── ReactQueryContainer
+│   │   └── Redux
+│   └── layouts          # Layout components
+│       └── appLayout
+├── core                 # Core utilities, services, and store configurations
+│   ├── hooks            # Custom hooks
+│   │   ├── useArrayObj.ts
+│   │   ├── useDocumentViewerContext.ts
+│   │   └── useTheme.ts
+│   ├── service          # Service layer for API calls and data handling
+│   │   └── data.service.ts
+│   └── store            # Redux store configuration
+│       ├── slice
+│       │   └── appConfig.slice.ts
+│       └── store.ts
+├── settings             # Project configuration files and constants
+│   ├── config           # Configurations (e.g., React Query)
+│   │   └── react-query.config.ts
+│   ├── constant         # Constant values used throughout the project
+│   │   ├── colors.constant.ts
+│   │   └── defaultSections.constant.tsx
+│   └── mock             # Mock data for api
+└── utils                # Utility functions
+    └── color.utils.ts
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Function requirements included
+- Optionally include a toggle at the header for dark and light modes (to assess theme experience).
+- Using codebase with typescript support is appreciable.
+- Run Google Lighthouse locally or with a deployed version and attach a screenshot of the insights in the Readme.
 
-## Deploy on Vercel
+### Lighthouse Insights
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Deployment
+The application is currently hosted at.
+[https://ds-task.vercel.app/](https://ds-task.vercel.app/)
